@@ -265,12 +265,12 @@
     "relativePath": "resource/prefabs"
   },
   "57f358ae-d606-4867-8dbc-adf65f7e2222": {
-    "asset": 1547177696493,
+    "asset": 1547178520412,
     "meta": 1547177696494,
     "relativePath": "scenes"
   },
   "14e5f481-e102-4e45-a086-bc734763b983": {
-    "asset": 1547177707084,
+    "asset": 1547178052145,
     "meta": 1547177707084,
     "relativePath": "scripts"
   },
@@ -300,12 +300,12 @@
     "relativePath": "scripts/module"
   },
   "2b7437e2-460a-4dac-bae6-ac64f6bdb10b": {
-    "asset": 1547178516671,
-    "meta": 1547178520414,
+    "asset": 1547186468314,
+    "meta": 1547186468319,
     "relativePath": "scenes/Index.fire"
   },
   "f3aadf93-ac4e-4f76-b4e3-85937f9d8228": {
-    "asset": 1547185211391,
+    "asset": 1547185236928,
     "meta": 1547185211393,
     "relativePath": "resource"
   }
