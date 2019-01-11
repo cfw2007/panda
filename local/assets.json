@@ -1,3 +1,20 @@
 {
-  "item-states": []
+  "item-states": [
+    {
+      "folded": false,
+      "id": "mount-assets"
+    },
+    {
+      "folded": true,
+      "id": "57f358ae-d606-4867-8dbc-adf65f7e2222"
+    },
+    {
+      "folded": true,
+      "id": "14e5f481-e102-4e45-a086-bc734763b983"
+    },
+    {
+      "folded": true,
+      "id": "f3aadf93-ac4e-4f76-b4e3-85937f9d8228"
+    }
+  ]
 }

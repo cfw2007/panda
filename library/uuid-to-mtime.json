@@ -300,13 +300,28 @@
     "relativePath": "scripts/module"
   },
   "2b7437e2-460a-4dac-bae6-ac64f6bdb10b": {
-    "asset": 1547186468314,
-    "meta": 1547186468319,
+    "asset": 1547194381926,
+    "meta": 1547194381932,
     "relativePath": "scenes/Index.fire"
   },
   "f3aadf93-ac4e-4f76-b4e3-85937f9d8228": {
     "asset": 1547185236928,
     "meta": 1547185211393,
     "relativePath": "resource"
+  },
+  "fd96f50a-4a8b-49a1-b525-2bd68d80ef37": {
+    "asset": 1547194281403,
+    "meta": 1547194306694,
+    "relativePath": "scenes/Game.fire"
+  },
+  "99560b13-e0cc-4dbc-bac7-92200ff7383d": {
+    "asset": 1547194354730,
+    "meta": 1547194362083,
+    "relativePath": "scripts/Index.js"
+  },
+  "54b41545-192a-40dd-9fb7-ab757237b92c": {
+    "asset": 1547194367322,
+    "meta": 1547194370930,
+    "relativePath": "scripts/Game.js"
   }
 }
