@@ -6,6 +6,7 @@
 var AdModel = {
     getAdRes:function (res) {
         return new Promise(function (resolve, reject) {
+            console.log(res);
             resolve(res);
         })
     }

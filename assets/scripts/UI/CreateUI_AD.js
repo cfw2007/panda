@@ -6,17 +6,20 @@
 let AdModel = require('../module/AdModel');
 var CreateUI_AD = {
     initAD :function (Node) {
-        if(Config.AD_area.length < 1){
+        if(GameData.AD_area.length < 1){
+            console.log(111);
+            CreateUI_AD.getAdInfo();
             return false;
         }
-        let backdroup = Node.getComponent(cc.Sprite);
-            backdroup.spriteFrame = GameData.AD_area.url;
+        let backdrop = Node.getComponent(cc.Sprite);
+            backdrop.spriteFrame = GameData.AD_area.url;
     },
     getAdInfo : function () {
-        let GameData = Http.Get(UrlData.getAdUrl,'',AdModel.getAdRes);
+        console.log(ApiUrl.getAdUrl);
+        let res_data = Http.Get(ApiUrl.getAdUrl);
         //同步处理请求回来的数据
-        GameData.then(function (res) {
-            console.log(res);
+        res_data.then(function (res) {
+            //同步处理返回信息
         })
     }
 

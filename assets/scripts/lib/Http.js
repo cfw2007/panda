@@ -4,43 +4,47 @@ use way : Http.Get(url,data,sf,ff);
  */
 window.Http = {
     version: GameData.version,
-    Get: function(url,reqData,sunccessFun,failFun){
-
+    Get: function(url,reqData='',sunccessFun,failFun){
         if(reqData.length > 0){
             url += "?";
             for(var item in reqData){
                 url += item +"=" +reqData[item] +"&";
             }
         }
-        // console.log(self.ip + url)
-        var xhr = new XMLHttpRequest();
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState == 4){
-                if(xhr.status >= 200 && xhr.status < 400){
-                    var response = xhr.responseText;
-                    // console.log(response)
-                    if(response){
-                        var responseJson = JSON.parse(response);
-                        let controller_name = "RootViewController";
-                        let function_name = "showWebView:";
-                        let param = URLData.UserLoginUrl;
-                        if( responseJson.status == -16){
-                            jsToObject(controller_name, function_name, param);
-                        }else if (responseJson.status == -100 && responseJson.msg == "未登录") {
-                            jsToObject(controller_name, function_name, param);
-                        }else {
-                            sunccessFun(responseJson);
+        return new Promise(function (resolve, reject) {
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4){
+                    if(xhr.status >= 200 && xhr.status < 400){
+                        var response = xhr.responseText;
+                        // console.log(response)
+                        if(response){
+                            var responseJson = JSON.parse(response);
+                            // let controller_name = "RootViewController";
+                            // let function_name = "showWebView:";
+                            // let param = URLData.UserLoginUrl;
+                            if( responseJson.status == -16){
+                                jsToObject(controller_name, function_name, param);
+                            }else if (responseJson.status == -100 && responseJson.msg == "未登录") {
+                                jsToObject(controller_name, function_name, param);
+                            }else if(!sunccessFun){
+                                resolve(responseJson);
+                            }else{
+                                sunccessFun(responseJson);
+                            }
+                        }else{
+                            sunccessFun(false);
                         }
                     }else{
-                        sunccessFun(false);
+                        failFun(false);
                     }
-                }else{
-                    failFun(false);
                 }
-            }
-        };
-        xhr.open("GET", url, true);
-        xhr.send();
+            };
+            xhr.open("GET", url, true);
+            xhr.send();
+        });
+
+
     },
 
     Post: function (url, reqData, sunccessFun,failFun) {

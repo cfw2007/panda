@@ -8,6 +8,6 @@ window.GameData = {
     AD_area: new Array(),
 }
 /** 接口地址 */
-window.UrlData = {
-    getAdUrl:'',
+window.ApiUrl = {
+    getAdUrl : "http://gdscfz.3000.com/?r=api&m=game&ac=getNotice&v=1.0.0",
 }
