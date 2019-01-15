@@ -285,8 +285,8 @@
     "relativePath": "resources"
   },
   "fd96f50a-4a8b-49a1-b525-2bd68d80ef37": {
-    "asset": 1547539534859,
-    "meta": 1547539534871,
+    "asset": 1547544867578,
+    "meta": 1547544867601,
     "relativePath": "scenes\\Game.fire"
   },
   "1e212fe2-9656-4fa9-8d7f-d62f64011e7d": {
@@ -424,19 +424,24 @@
     "meta": 1547538708262,
     "relativePath": "resources\\Prefab\\bug.prefab"
   },
-  "54b41545-192a-40dd-9fb7-ab757237b92c": {
-    "asset": 1547539155996,
-    "meta": 1547539173262,
-    "relativePath": "scripts\\Game.js"
-  },
-  "cbb8a864-8e01-4a55-b9b1-df7cbffcc4fb": {
-    "asset": 1547539533356,
-    "meta": 1547539534394,
-    "relativePath": "scripts\\Bug.js"
-  },
   "1298ed34-c3ee-4e46-ba44-f7fab5f43454": {
     "asset": 1547539520206,
     "meta": 1547539534395,
     "relativePath": "scripts\\Prop.js"
+  },
+  "cbb8a864-8e01-4a55-b9b1-df7cbffcc4fb": {
+    "asset": 1547540047453,
+    "meta": 1547542181433,
+    "relativePath": "scripts\\Bug.js"
+  },
+  "54b41545-192a-40dd-9fb7-ab757237b92c": {
+    "asset": 1547540515363,
+    "meta": 1547542181434,
+    "relativePath": "scripts\\Game.js"
+  },
+  "c534c8d3-e0b7-4602-bb05-97b4823ee3c7": {
+    "asset": 1547544858018,
+    "meta": 1547544858027,
+    "relativePath": "resources\\Prefab\\prop.prefab"
   }
 }
