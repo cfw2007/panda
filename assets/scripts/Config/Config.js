@@ -6,6 +6,7 @@
 /** 全局数据 */
 window.GameData = {
     AD_area: new Array(),
+    children_list : new Map(),
 }
 /** 接口地址 */
 window.ApiUrl = {
