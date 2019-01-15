@@ -3,6 +3,9 @@
  * 简博言 2019-01-12
  * TODO 1.初始化入口脚本
  * **/
+window.ConfigData = {
+    top_y : 100
+}
 /** 全局数据 */
 window.GameData = {
     AD_area: new Array(),
