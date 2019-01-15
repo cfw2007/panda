@@ -24,6 +24,15 @@ cc.Class({
         let self = this;
         CreateUi_AD.initAD(self.ADViewNode);//初始化背景数据
         CreateUi_Panda.initCreateUiPanda(self.TouchViewNode,self.PandaNode);
+
+        Prop.initProp();
+        Prop.initNode();
+        self.schedule(function () {
+            Bug.createBug(self.node)
+        },1);
+        self.schedule(function () {
+           Prop.createProp();
+        },1)
     },
 
 

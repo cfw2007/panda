@@ -1,63 +1,62 @@
-2019-01-14T01:15:11.997Z - normal: Load ~/.CocosCreator/settings.json
-2019-01-14T01:15:12.000Z - normal: checking language setting...
-2019-01-14T01:15:12.000Z - normal: Language: zh
-2019-01-14T01:15:12.448Z - success: protocol editor-framework registered
-2019-01-14T01:15:12.448Z - success: protocol app registered
-2019-01-14T01:15:12.449Z - success: protocol theme registered
-2019-01-14T01:15:12.449Z - success: protocol packages registered
-2019-01-14T01:15:12.449Z - success: protocol unpack registerred
-2019-01-14T01:15:12.449Z - success: protocol disable-commonjs registerred
-2019-01-14T01:15:12.636Z - normal: connected!
-2019-01-14T01:15:12.638Z - normal: Check project /Users/jianboyan/Desktop/GitDownload/panda
-2019-01-14T01:15:12.644Z - normal: Initializing project /Users/jianboyan/Desktop/GitDownload/panda
-2019-01-14T01:15:12.649Z - normal: Initializing Cocos2d
-2019-01-14T01:15:13.219Z - normal: Initializing Asset Database
-2019-01-14T01:15:13.251Z - success: protocol uuid registerred
-2019-01-14T01:15:13.251Z - success: protocol db registerred
-2019-01-14T01:15:13.251Z - success: protocol thumbnail registerred
-2019-01-14T01:15:13.251Z - normal: Loading editor/builtin packages
-2019-01-14T01:15:13.394Z - success: assets loaded
-2019-01-14T01:15:13.398Z - success: builder loaded
-2019-01-14T01:15:13.401Z - success: cocos-analytics loaded
-2019-01-14T01:15:13.406Z - success: console loaded
-2019-01-14T01:15:13.433Z - success: fb-instant-games loaded
-2019-01-14T01:15:13.435Z - success: google-instant-games loaded
-2019-01-14T01:15:13.441Z - success: hierarchy loaded
-2019-01-14T01:15:13.444Z - success: inspector loaded
-2019-01-14T01:15:13.446Z - success: keystore loaded
-2019-01-14T01:15:13.451Z - success: node-library loaded
-2019-01-14T01:15:13.452Z - success: package-asset loaded
-2019-01-14T01:15:13.454Z - success: preferences loaded
-2019-01-14T01:15:13.457Z - success: project-exporter loaded
-2019-01-14T01:15:13.469Z - success: project-importer loaded
-2019-01-14T01:15:13.473Z - success: project-settings loaded
-2019-01-14T01:15:13.476Z - success: ui-kit loaded
-2019-01-14T01:15:13.480Z - success: scene loaded
-2019-01-14T01:15:13.481Z - success: sprite-editor loaded
-2019-01-14T01:15:13.486Z - success: store loaded
-2019-01-14T01:15:13.491Z - success: timeline loaded
-2019-01-14T01:15:13.491Z - normal: Loading builtin packages
-2019-01-14T01:15:13.500Z - success: asset-db-debugger loaded
-2019-01-14T01:15:13.501Z - success: color-picker loaded
-2019-01-14T01:15:13.574Z - success: google-play-instant loaded
-2019-01-14T01:15:13.575Z - success: jsb-adapter loaded
-2019-01-14T01:15:13.581Z - success: package-manager loaded
-2019-01-14T01:15:13.682Z - success: qqplay-adapter loaded
-2019-01-14T01:15:13.743Z - success: sdkbox loaded
-2019-01-14T01:15:13.750Z - success: tester loaded
-2019-01-14T01:15:13.756Z - success: ui-grid loaded
-2019-01-14T01:15:13.759Z - success: ui-kit-preview-extra loaded
-2019-01-14T01:15:13.762Z - success: ui-kit-preview loaded
-2019-01-14T01:15:13.766Z - success: ui-tree loaded
-2019-01-14T01:15:13.767Z - success: weapp-adapter loaded
-2019-01-14T01:15:14.586Z - normal: Loading packages
-2019-01-14T01:15:14.594Z - normal: Watching packages
-2019-01-14T01:15:14.651Z - normal: Run Application
-2019-01-14T01:15:15.761Z - success: preview server running at http://localhost:7456
-2019-01-14T01:21:55.847Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:5714
-2019-01-14T01:21:55.849Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:5716
-2019-01-14T01:42:56.424Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:12392
-2019-01-14T01:51:59.043Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:18807
-2019-01-14T02:21:22.415Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:40303
-2019-01-14T02:24:48.769Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:42700
-2019-01-14T02:32:21.496Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:48307
+2019-01-15T07:13:37.588Z - normal: Load ~/.CocosCreator/settings.json
+2019-01-15T07:13:37.593Z - normal: checking language setting...
+2019-01-15T07:13:37.593Z - normal: Language: zh
+2019-01-15T07:13:39.191Z - success: protocol editor-framework registered
+2019-01-15T07:13:39.191Z - success: protocol app registered
+2019-01-15T07:13:39.191Z - success: protocol theme registered
+2019-01-15T07:13:39.191Z - success: protocol packages registered
+2019-01-15T07:13:39.191Z - success: protocol unpack registerred
+2019-01-15T07:13:39.191Z - success: protocol disable-commonjs registerred
+2019-01-15T07:13:39.470Z - normal: connected!
+2019-01-15T07:13:39.472Z - normal: Check project D:\phpStudy\WWW\panda
+2019-01-15T07:13:39.475Z - normal: Initializing project D:\phpStudy\WWW\panda
+2019-01-15T07:13:39.479Z - normal: Initializing Cocos2d
+2019-01-15T07:13:40.166Z - normal: Initializing Asset Database
+2019-01-15T07:13:40.202Z - success: protocol uuid registerred
+2019-01-15T07:13:40.203Z - success: protocol db registerred
+2019-01-15T07:13:40.203Z - success: protocol thumbnail registerred
+2019-01-15T07:13:40.203Z - normal: Loading editor/builtin packages
+2019-01-15T07:13:40.348Z - success: assets loaded
+2019-01-15T07:13:40.350Z - success: builder loaded
+2019-01-15T07:13:40.352Z - success: cocos-analytics loaded
+2019-01-15T07:13:40.354Z - success: console loaded
+2019-01-15T07:13:40.387Z - success: fb-instant-games loaded
+2019-01-15T07:13:40.388Z - success: google-instant-games loaded
+2019-01-15T07:13:40.393Z - success: hierarchy loaded
+2019-01-15T07:13:40.395Z - success: inspector loaded
+2019-01-15T07:13:40.396Z - success: keystore loaded
+2019-01-15T07:13:40.400Z - success: node-library loaded
+2019-01-15T07:13:40.401Z - success: package-asset loaded
+2019-01-15T07:13:40.402Z - success: preferences loaded
+2019-01-15T07:13:40.405Z - success: project-exporter loaded
+2019-01-15T07:13:40.418Z - success: project-importer loaded
+2019-01-15T07:13:40.421Z - success: project-settings loaded
+2019-01-15T07:13:40.424Z - success: ui-kit loaded
+2019-01-15T07:13:40.426Z - success: scene loaded
+2019-01-15T07:13:40.427Z - success: sprite-editor loaded
+2019-01-15T07:13:40.430Z - success: store loaded
+2019-01-15T07:13:40.435Z - success: timeline loaded
+2019-01-15T07:13:40.436Z - normal: Loading builtin packages
+2019-01-15T07:13:40.438Z - success: asset-db-debugger loaded
+2019-01-15T07:13:40.440Z - success: code-editor loaded
+2019-01-15T07:13:40.441Z - success: color-picker loaded
+2019-01-15T07:13:40.522Z - success: google-play-instant loaded
+2019-01-15T07:13:40.524Z - success: jsb-adapter loaded
+2019-01-15T07:13:40.527Z - success: package-manager loaded
+2019-01-15T07:13:40.621Z - success: qqplay-adapter loaded
+2019-01-15T07:13:40.624Z - success: sdkbox loaded
+2019-01-15T07:13:40.627Z - success: tester loaded
+2019-01-15T07:13:40.628Z - success: ui-grid loaded
+2019-01-15T07:13:40.630Z - success: ui-kit-preview-extra loaded
+2019-01-15T07:13:40.631Z - success: ui-kit-preview loaded
+2019-01-15T07:13:40.632Z - success: ui-tree loaded
+2019-01-15T07:13:40.633Z - success: weapp-adapter loaded
+2019-01-15T07:13:41.632Z - normal: Loading packages
+2019-01-15T07:13:41.637Z - normal: Watching packages
+2019-01-15T07:13:41.978Z - normal: Run Application
+2019-01-15T07:13:42.483Z - warn: [db-task][init] Backup unused meta file: db://assets/resources/altas.meta
+2019-01-15T07:13:42.486Z - warn: [db-task][init] Backup unused meta file: db://assets/resources/animation.meta
+2019-01-15T07:13:42.490Z - warn: [db-task][init] Backup unused meta file: db://assets/resources/fonts.meta
+2019-01-15T07:13:42.493Z - warn: [db-task][init] Backup unused meta file: db://assets/resources/prefabs.meta
+2019-01-15T07:13:42.498Z - warn: [db-task][init] Backup unused meta file: db://assets/sfx.meta
+2019-01-15T07:14:02.501Z - success: preview server running at http://localhost:7457
