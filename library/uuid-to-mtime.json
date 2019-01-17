@@ -395,8 +395,8 @@
     "relativePath": "resources/Prefab"
   },
   "156cde41-6a00-4163-9106-563a5f84d1f3": {
-    "asset": 1547706102682,
-    "meta": 1547706102687,
+    "asset": 1547709068693,
+    "meta": 1547709068699,
     "relativePath": "resources/Prefab/bug.prefab"
   },
   "b46207bc-ad2f-4984-b93f-0153d19c3318": {
@@ -425,8 +425,8 @@
     "relativePath": "resources/Prefab/scj.prefab"
   },
   "fd96f50a-4a8b-49a1-b525-2bd68d80ef37": {
-    "asset": 1547706336872,
-    "meta": 1547706336878,
+    "asset": 1547708484493,
+    "meta": 1547708484506,
     "relativePath": "scenes/Game.fire"
   },
   "cbb8a864-8e01-4a55-b9b1-df7cbffcc4fb": {
@@ -444,25 +444,10 @@
     "meta": 1547545205383,
     "relativePath": "testures/UI/scj.png"
   },
-  "92da5b13-f50e-41b0-83c4-c57381c5c12d": {
-    "asset": 1547543279818,
-    "meta": 1547546831515,
-    "relativePath": "scripts/Config/Config.js"
-  },
   "0b8b1efe-7983-4d87-b12c-61408f5d6088": {
     "asset": 1547548152358,
     "meta": 1547548191596,
     "relativePath": "scripts/UI/CreateUI_AD.js"
-  },
-  "11182489-a285-47ad-b622-3a4e23318c54": {
-    "asset": 1547548655827,
-    "meta": 1547548670263,
-    "relativePath": "scripts/test.js"
-  },
-  "83a64e5a-0a96-4c37-82b3-7ef5f597b8e0": {
-    "asset": 1547549579582,
-    "meta": 1547549582822,
-    "relativePath": "scripts/lib/SpecialEffects.js"
   },
   "54b41545-192a-40dd-9fb7-ab757237b92c": {
     "asset": 1547705808683,
@@ -473,5 +458,25 @@
     "asset": 1547706207021,
     "meta": 1547706211516,
     "relativePath": "scripts/Prop.js"
+  },
+  "92da5b13-f50e-41b0-83c4-c57381c5c12d": {
+    "asset": 1547715727649,
+    "meta": 1547715795285,
+    "relativePath": "scripts/Config/Config.js"
+  },
+  "83a64e5a-0a96-4c37-82b3-7ef5f597b8e0": {
+    "asset": 1547716192083,
+    "meta": 1547716194629,
+    "relativePath": "scripts/lib/SpecialEffects.js"
+  },
+  "11182489-a285-47ad-b622-3a4e23318c54": {
+    "asset": 1547716684136,
+    "meta": 1547716796660,
+    "relativePath": "scripts/test.js"
+  },
+  "8f9e86c6-5856-4abb-8331-9742ddf6877e": {
+    "asset": 1547716794458,
+    "meta": 1547716796661,
+    "relativePath": "scripts/Worms.js"
   }
 }

@@ -8,11 +8,17 @@ window.ConfigData = {
 }
 /** 全局数据 */
 window.GameData = {
-    AD_area: new Array(),
-    children_list : new Map(),
-    start_point : -1,
-    Collision_start:-1,
-    is_collision : false,
+    AD_area              : new Array(),
+    children_list        : new Map(),
+    is_collision         : false,
+    is_bug_collision     : false,
+    is_start             : true,
+    start_bug_point      : -1,
+    start_point          : -1,
+    Collision_worm_start : -1,
+    Collision_start      : -1,
+    panda_start_y        : -1,
+    panda_end_y          : -1,
 }
 /** 接口地址 */
 window.ApiUrl = {
