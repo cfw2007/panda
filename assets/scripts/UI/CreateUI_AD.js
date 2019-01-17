@@ -7,7 +7,6 @@ let AdModel = require('../module/AdModel');
 var CreateUI_AD = {
     initAD :function (Node) {
         if(GameData.AD_area.length < 1){
-            console.log(111);
             CreateUI_AD.getAdInfo();
             return false;
         }

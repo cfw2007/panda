@@ -10,6 +10,9 @@ window.ConfigData = {
 window.GameData = {
     AD_area: new Array(),
     children_list : new Map(),
+    start_point : -1,
+    Collision_start:-1,
+    is_collision : false,
 }
 /** 接口地址 */
 window.ApiUrl = {
