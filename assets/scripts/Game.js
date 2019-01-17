@@ -28,7 +28,7 @@ cc.Class({
         Prop.initProp();
         Prop.initNode();
         self.schedule(function () {
-            Bug.createBug(self.node);
+            Bug.createBug();
         },1);
         self.schedule(function () {
            Prop.createProp();

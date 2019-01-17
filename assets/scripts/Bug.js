@@ -12,13 +12,13 @@ window.Bug = ({
     inity:-680,
     initx:function () {
         //初始x,y轴位置
-        let initPosition = [-224.5,-164.5,70.5,135.5,-74.5,-14.5,225.5,285.5];
+        let initPosition = [1,2,3,4,5,6,7,8];
         let x =  Math.floor((Math.random()*initPosition.length));
-        return initPosition[x];
+        return  GameData.children_list.get(initPosition[x]);
     },
 
     //创建虫子
-    createBug:function (obj) {
+    createBug:function () {
         var that  = this;
         cc.loader.loadRes('Prefab/bug', function(errorMessage,loadedResource){
             //检查资源加载
@@ -26,10 +26,11 @@ window.Bug = ({
             if( !( loadedResource instanceof cc.Prefab ) ) { cc.log( '你载入的不是预制资源!' ); return; }
             //开始实例化预制资源
             var bugPrefab = cc.instantiate(loadedResource);
-            obj.addChild(bugPrefab);
             let x = that.initx();
-            bugPrefab.setPosition(x,that.inity);
-            let shakeAnimation =  cc.speed(cc.sequence(cc.moveTo(10,cc.v2(x,680)),cc.callFunc(function () {
+
+            x.addChild(bugPrefab);
+            bugPrefab.setPosition(x.x,that.inity);
+            let shakeAnimation =  cc.speed(cc.sequence(cc.moveTo(10,cc.v2(x.x,680)),cc.callFunc(function () {
                 bugPrefab.destroy()
             })),1);
             bugPrefab.runAction(shakeAnimation);
