@@ -30,20 +30,26 @@ let SpecialEffects = {
         Node.on(cc.Node.EventType.TOUCH_START,function (touch,event) {
             let touchPoint = touch.getLocation();		//局部变量在函数执行完毕后，立即销毁
             startPoint = touchPoint.x;
+            GameData.start_point = GameData.is_start ? 1280 : touchPoint.y ;
+            GameData.is_start = false;
+            GameData.panda_end_y = touchPoint.y;
         });
-        console.log(touch_point == startPoint || touch_point == startPoint+20 || touch_point == startPoint-20)
+        //console.log(touch_point == startPoint || touch_point == startPoint+20 || touch_point == startPoint-20)
         //如果点击结束位置和开始位置相同
         if(touch_point == startPoint || touch_point == startPoint+20 || touch_point == startPoint-20){
             Node.on(cc.Node.EventType.TOUCH_MOVE,function (touch,event) {
                 let touchPoint = touch.getLocation();		//局部变量在函数执行完毕后，立即销毁
+                let jump_value = Math.abs((touchPoint.x - startPoint));
+                let jump_state = (touchPoint.x - startPoint) ;
+                setTimeout(function () {
+                    GameData.start_point = touchPoint.y
+                },500);
+                GameData.panda_end_y = touchPoint.y;
                 if((touchPoint.y - 640) > 540){
                     Node_2.y = (touchPoint.y - 640) > 540 ? 540 : (touchPoint.y - 640);
                 }else if((touchPoint.y - 640) > -540  ){
                     Node_2.y = (touchPoint.y - 640) < -540 ? -540 : (touchPoint.y - 640);
                 } 		//设置fireFox精灵的位置为触摸拖动的位置
-                let jump_value = Math.abs((touchPoint.x - startPoint));
-                let jump_state = (touchPoint.x - startPoint) ;
-                GameData.start_point = touchPoint.y;
                 if(jump_value > 180){
                     startPoint = touchPoint.x;
                     if (panda_node_num >= 8 || jump_state < 0){
@@ -51,15 +57,17 @@ let SpecialEffects = {
                     }else if(panda_node_num <= 1 || jump_state > 0){
                         add_status = true;
                     }
+                    GameData.start_point = touchPoint.y;
+                    GameData.panda_end_y = touchPoint.y;
                     add_status ? panda_node_num++ : panda_node_num--;
                     panda_node_num = panda_node_num <= 0 ? 1 : panda_node_num;
                     Node_2.parent = GameData.children_list.get(panda_node_num);
                 }
             });
             Node.on(cc.Node.EventType.TOUCH_END,function (touch,event) {
-                let touchPoint = touch.getLocation();		//局部变量在函数执行完毕后，立即销毁
-                    touch_point = touchPoint.y;
-                    startPoint = 0;
+                    GameData.panda_start_y = 0;
+                    GameData.panda_end_y = 0;
+                    GameData.start_point = 0;
             });
         }
 
