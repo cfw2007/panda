@@ -4,7 +4,7 @@
  * TODO 1.初始化入口脚本
  * **/
 window.ConfigData = {
-    top_y : 100
+    top_y : 100,
 }
 /** 全局数据 */
 window.GameData = {
@@ -19,6 +19,17 @@ window.GameData = {
     Collision_start      : -1,
     panda_start_y        : -1,
     panda_end_y          : -1,
+    panda_history        : null,
+    panda_new            : null,
+    panda_state          : false,
+    status               : true,
+    is_stop              : true,
+}
+window.GameInfo = {
+    time         : 200,
+    new_score    : 0,
+    history_score: 0 ,
+    ScoreLabel   : null,
 }
 /** 接口地址 */
 window.ApiUrl = {
