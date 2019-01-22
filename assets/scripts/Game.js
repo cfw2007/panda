@@ -14,6 +14,9 @@ cc.Class({
         PandaNode           : cc.Node,
         TouchViewNode       : cc.Node,//触控层
         BackdropViewNode    : cc.Node,//背景层
+        TimeViewNode        : cc.Node,//倒计时
+        TimeLabelNode       : cc.Node,//
+        ScoreLabelNode      : cc.Node,//分数计数器
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -22,9 +25,12 @@ cc.Class({
 
     start () {
         let self = this;
+        let label = self.TimeLabelNode.getComponent(cc.Label);
+        let score_label = self.ScoreLabelNode.getComponent(cc.Label);
+            GameInfo.ScoreLabel = score_label;
         CreateUi_AD.initAD(self.ADViewNode);//初始化背景数据
         CreateUi_Panda.initCreateUiPanda(self.TouchViewNode,self.PandaNode);
-
+        CreateUi_AD.resetTime(200,label,self.TimeViewNode);
         Prop.initProp();
         Prop.initNode();
         self.schedule(function () {
