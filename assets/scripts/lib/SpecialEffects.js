@@ -43,49 +43,32 @@ let SpecialEffects = {
             let touchPoint = touch.getLocation();
             if( !touch_state ){
                 touch_state = true;
-                setTimeout(function () {
-                    // //console.log(new Date());
+                setInterval(function () {
                     touch_state = false;
-                    GameData.is_stop =  true ;
-                    },2000);
+                    GameData.is_stop = true ;
+                },2000);
             }
             GameData.is_stop = false;
             GameData.panda_history = GameData.panda_new;
             GameData.panda_new = touchPoint;
-                // if(GameData.panda_new != null && touchPoint.y != history_point.y){
-                //     GameData.panda_history = history_point;
-                // }
-                // GameData.panda_new = touchPoint;
-                // GameData.status = false;
-                	//局部变量在函数执行完毕后，立即销毁
-                let jump_value = Math.abs((touchPoint.x - startPoint));
-                let jump_state = (touchPoint.x - startPoint) ;
-                // if( !touch_state ){
-                //     touch_state = true;
-                //     setTimeout(function () {
-                //         touch_state = false;
-                //         GameData.status = true;
-                //         GameData.start_point = touchPoint.y;
-                //         GameData.panda_end_y = touchPoint.y;
-                //     },1000);
-                // }
-                //
-                // GameData.panda_end_y = touchPoint.y;
-                if(GameData.panda_new != null ){
-                    let panda_y = GameData.panda_history != null ? GameData.panda_history.y : 0 ;
-                    Node_2.y += (touchPoint.y - panda_y);
-                }	//设置fireFox精灵的位置为触摸拖动的位置
-                if(jump_value > 100){
-                    startPoint = touchPoint.x;
-                    if (panda_node_num >= 8 || jump_state < 0){
-                        add_status = false;
-                    }else if(panda_node_num <= 1 || jump_state > 0){
-                        add_status = true;
-                    }
+            //局部变量在函数执行完毕后，立即销毁
+            let jump_value = Math.abs((touchPoint.x - startPoint));
+            let jump_state = (touchPoint.x - startPoint) ;
+            if(GameData.panda_new != null ){
+                let panda_y = GameData.panda_history != null ? GameData.panda_history.y : 0 ;
+                Node_2.y += (touchPoint.y - panda_y);
+            }	//设置fireFox精灵的位置为触摸拖动的位置
+            if(jump_value > 100){
+                startPoint = touchPoint.x;
+                if (panda_node_num >= 8 || jump_state < 0){
+                    add_status = false;
+                }else if(panda_node_num <= 1 || jump_state > 0){
+                    add_status = true;
+                }
                     add_status ? panda_node_num++ : panda_node_num--;
                     panda_node_num = panda_node_num <= 0 ? 1 : panda_node_num;
                     Node_2.parent = GameData.children_list.get(panda_node_num);
-                }
+            }
         });
         Node.on(cc.Node.EventType.TOUCH_END,function (touch,event) {
             GameData.is_stop = true;
