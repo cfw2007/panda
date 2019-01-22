@@ -24,7 +24,7 @@ cc.Class({
      * @param  {Collider} self  产生碰撞的自身的碰撞组件
      */
     onCollisionEnter: function (other, worm) {
-        console.log('on collision enter',worm);
+        //console.log('on collision enter',worm);
         // 碰撞系统会计算出碰撞组件在世界坐标系下的相关的值，并放到 world 这个属性里面
         let world = worm.world;
         // 碰撞组件的 aabb 碰撞框
@@ -54,12 +54,12 @@ cc.Class({
      * @param  {Collider} self  产生碰撞的自身的碰撞组件
      */
     onCollisionStay: function (panda, worm) {
-        console.log(GameData.panda_end_y,GameData.panda_start_y,GameData.start_point);
-        let state = GameData.panda_end_y == GameData.panda_start_y || GameData.panda_start_y == 0;
-        if( state ){
-            panda.node.stopAllActions();
-            panda.node.active = false;
-        }
+        // console.log(GameData.panda_end_y,GameData.panda_start_y,GameData.start_point);
+        // let state = GameData.panda_end_y == GameData.panda_start_y || GameData.panda_start_y == 0;
+        // if( state ){
+        //     panda.node.stopAllActions();
+        //     panda.node.active = false;
+        // }
     },
     /**
      * 当碰撞结束后调用
@@ -67,7 +67,7 @@ cc.Class({
      * @param  {Collider} self  产生碰撞的自身的碰撞组件
      */
     onCollisionExit: function (other, self) {
-        console.log('on collision enter',GameData.start_point);
+        //console.log('on collision enter',GameData.start_point);
         GameData.is_collision = false;
     },
 });
